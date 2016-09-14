@@ -3,11 +3,13 @@
 
 int main(int argc, char *argv[])
 {
-    char tgStr[25];
-    //create image pointer and "open", "read" into program
-    FILE * imgPtr = fopen("image.ppm", "r");
-    //gather the first character from the image file
-    int chr = fgetc(imgPtr);
+    char tgStr[255];
+    //create pointer to the file and "open", "read"
+    //imgPtrIn : image pointer input
+    //imgPtrIn will be input.ppm var
+    FILE *imgPtrIn = fopen("image.ppm", "rb");
+    //gather the first character (byte) from the image file
+    int chr = fgetc(imgPtrIn);
     //if the character isn't equal to p, then it isn't a ppm file
     //other "errors" will go here
     if(chr != 'P')
@@ -17,21 +19,22 @@ int main(int argc, char *argv[])
     }
 
     //read file line by line
-    while(fgets(tgStr, 25, imgPtr))
+    while(fgets(tgStr, 255, imgPtrIn))
     {
-//          printf(tgStr);
-        if(imgPtr = 6)
-        {
-            //printf("test\n");
-            imgPtr = fopen("image.ppm", "w");
-            fputs("test",imgPtr);
-            //printf(imgPtr);
+        //ex:
+        //fwrite(where from, size of element, num elements, stream);
+        //will be output.ppm var
+//        FILE *imgPtrOut;
+//        imgPtrOut = fopen(outfilename, "wb");
+//
 
-        }
+
+//        printf(tgStr);
     }
 
 
-    fclose(imgPtr);
+
+    fclose(imgPtrIn);
 
     return 0;
 }
