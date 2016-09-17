@@ -1,3 +1,11 @@
+/*
+    Ashley Green
+    16 September 2016
+    3116233
+    CS 430
+    Project 1
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
