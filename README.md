@@ -9,9 +9,8 @@ Translate P3 image file to P6 image file and vice versa
           -makerfile.txt<br>
           -ppmrw.c<br>
         </ul>
-2. <b> Example of command line compilation and execution </b>
+2. <b> Example of command line compilation and execution of p3 to p6</b>
         <ul>
-          p3 - p6<br>
           gcc ppmrw.c -o ppmrw<br>
           ppmrw 6 p3top6.ppm output.ppm<br>
         </ul>
