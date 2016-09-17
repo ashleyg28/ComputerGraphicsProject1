@@ -1,4 +1,5 @@
 # Computer Graphics Project1
+#Ashley N. Green
 First project in Computer Graphics course at Northern Arizona University - Fall 2016
 Translate P3 image file to P6 image file and vice versa
 
